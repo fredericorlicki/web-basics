@@ -1,0 +1,11 @@
+<p>You said : <%= @coach_question %></p>
+<p>Angry Coach said "<%= @coach_answer %>"</p>
+
+
+<form action="/coach" method="post">
+	<form>
+		<label for="user_message">What ?</label>
+		<input type="text" name="what" id="user_message">
+		<input type="submit" value="Just say it !">
+	</form>
+</form>

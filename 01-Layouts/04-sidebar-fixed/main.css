@@ -4,3 +4,34 @@
 	font-family: 'Open Sans', sans-serif;
 	padding
 }
+
+ul
+{
+list-style-type: none;
+}
+
+li {
+
+position:relative;
+top: 100px;
+left:-180px;
+
+
+}
+
+header {
+position:absolute;
+left:0px;
+right:0px;
+top:0px;
+z-index:-1;
+background-color: #5B72AD;
+color:white;
+}
+
+footer {
+position:absolute;
+left:10px;
+bottom:15px;
+
+}
