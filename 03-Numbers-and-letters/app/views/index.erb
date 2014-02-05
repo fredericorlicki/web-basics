@@ -4,10 +4,13 @@
 
 <p>***</p>
 
-<!--Here you should print a new game grid-->
+<h3><%= @game.grid %></h3>
+
 
 <p>***</p>
 
+<p><%= Game.avg_score %></p>
+<p><%= Game.nb_games %></p>
 <form action="/guess" method="post">
 	<form>
 		<label for="user_guess">What's your guess ?</label>
@@ -16,5 +19,8 @@
 	</form>
 </form>
 
-<!--Here you should print the results of the last game finished-->
+<% if @submitted_game %>
+	<h3><%= @submitted_game.message %></h3>
+	<p>VOTRE MOT VEUT DIRE : <%= @submitted_game.translation %></p>
+<% end %>
 
